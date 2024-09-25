@@ -1,0 +1,84 @@
+.admin-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  background-color: #f9f9f9;
+}
+
+.admin-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.admin-form button {
+  border-radius: 40px;
+  width: 100%;
+  background-color: #0024d4;
+  color: #fff;
+}
+.admin-form button:hover {
+  background-color: #001eb1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group input,
+.form-group .form-control {
+  border-radius: 40px;
+}
+.form-group input:is(:hover, :active, :target, :focus-visible) {
+  border: 1px solid #0024d4;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-group label,
+.form-group .error {
+  margin-bottom: 4px;
+  text-align: left;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+.form-check-input:checked,
+.form-check-input:checked:is(:active, :target, :focus-visible) {
+  background-color: #0024d4;
+  border-color: #0024d4;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-check-input {
+  background-color: #0024d4;
+}
+.gender-radio,
+.gender-radio .form-check,
+.gender-radio .form-check-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.gender-radio .form-check {
+  min-height: auto;
+}
+.form-check,
+.form-check-label,
+.form-check .form-check-input {
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  .admin-form-container {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}

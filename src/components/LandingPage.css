@@ -1,0 +1,47 @@
+.landing-page {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: #0024d4;
+  color: #fff;
+  padding: 100px 20px;
+}
+.hero button {
+  background: #fff;
+  color: #0024d4;
+  border-radius: 40px;
+}
+.hero button:is(:hover, :target, :focus-visible, :active) {
+  background-color: #0024d4;
+  color: #fff;
+  border-color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.features {
+  padding: 50px 20px;
+}
+
+.features .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.features .col-md-4 {
+  margin-bottom: 30px;
+}
